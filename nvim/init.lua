@@ -14,7 +14,7 @@ opt.hidden = true
 opt.hlsearch = true
 opt.backspace = {'indent', 'eol', 'start' }
 opt.shiftwidth = 2
-opt.guifont = 'FiraCode:h10'
+opt.guifont = 'PragmataPro Mono Liga:h10'
 opt.laststatus = 2
 
 -- Disable some unused built-in Neovim plugins
