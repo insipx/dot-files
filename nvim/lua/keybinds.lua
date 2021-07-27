@@ -17,6 +17,7 @@ wk.register({
       B = { "<cmd>Telescope buffers<cr>", 	"List Buffers" 	  },
       n = { '<cmd>bnext<cr>', 			"Next Buffer" 	  },
       p = { '<cmd>bprevious<cr>', 		"Previous Buffer" },
+      k = { '<cmd>Bdelete<cr>', 		"Close Buffer" 	  },
     },
     p = {
       name = "project",
@@ -58,14 +59,16 @@ wk.register({
       d 		= { "<cmd>tabclose<cr>", 	"Close Workspace"	      },
       ["]"] 		= { "<C-PageDown>", 		"Next Workspace"	      },
       ["["] 		= { "<C-PageUp>", 		"Previous Workspace"	      },
-      ["<Right>"] 	= { ":tabm +1",			"Move Workspace to the right" },
-      ["<Left>"] 	= { ":tabm -1",			"Move Worksapce to the left"  },
+      ["<Right>"] 	= { ":tabm +1<CR>",		"Move Workspace to the right" },
+      ["<Left>"] 	= { ":tabm -1<CR>",		"Move Worksapce to the left"  },
     },
     ["/"] = { "<cmd>Telescope live_grep<cr>", "Search project" },
   },
   ["\\\\"] = {
       name = "navigation",
-      w = { ":HopWord<cr>", 			"Hop to a word" 	},
+      w = { ":HopWord<cr>", 			"Hop to a word" 	    },
+      b = { ":HopWordBC<CR>",			"Hop word backwards" 	    },
+      f = { ":HopWordAC<CR>",			"Hop word forwards"	    },
   },
 })
 

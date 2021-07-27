@@ -33,6 +33,8 @@ return require('packer').startup(function()
   -- You can alias plugin names
   use {'dracula/vim', as = 'dracula'}
   use 'voldikss/vim-floaterm'
+  use 'moll/vim-bbye'
+
   -- discord presence
   use 'andweeb/presence.nvim'
   use { 
